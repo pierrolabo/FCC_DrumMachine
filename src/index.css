@@ -11,3 +11,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: lightblue;
+  padding: 12px;
+}
+
+.case {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  min-height: 70vh;
+  min-width: 40vh;
+  color: white;
+  max-width: 540px;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #b7bcc0;
+  width: 90%;
+  min-height: 12vh;
+}
+
+.drum-pads {
+  display: flex;
+  background: #6534b3;
+  width: 90%;
+  min-height: 45vh;
+  margin: 22px 12px;
+}
+
+.drum-pads-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.drum-pads-row {
+  display: flex;
+  width: 100%;
+}
+
+.drum-pad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+  margin-top: 12px;
+  margin-left: 8px;
+  height: 25px;
+  width: 25px;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.drum-pad:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
