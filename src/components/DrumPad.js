@@ -4,12 +4,21 @@ import { updateDisplay } from '../actions/updateAction';
 
 class DrumPad extends Component {
   handleClick = (e) => {
-    this.refs.audioElement.play();
+    if (this.refs.audioElement.paused) {
+      this.refs.audioElement.play();
+    } else {
+      this.refs.audioElement.currentTime = 0;
+    }
     this.props.updateDisplay(this.props.val);
   };
   handleKey = (e) => {
     if (String.fromCharCode(e.keyCode) === this.props.val) {
-      this.refs.audioElement.play();
+      if (this.refs.audioElement.paused) {
+        this.refs.audioElement.play();
+      } else {
+        this.refs.audioElement.currentTime = 0;
+      }
+      this.props.updateDisplay(this.props.val);
     }
   };
   componentWillMount() {

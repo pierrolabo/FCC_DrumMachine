@@ -1,6 +1,7 @@
 import React from 'react';
 import DrumPad from '../components/DrumPad';
 //https://stackoverflow.com/questions/50594972/manage-multiple-audio-sources-in-react
+//https://stackoverflow.com/questions/17636310/play-audio-and-restart-it-onclick
 import audio1 from '../samples/PO-12_11_3.wav';
 import audio2 from '../samples/PO-12_01_3.wav';
 import audio3 from '../samples/PO-12_08_5.wav';
