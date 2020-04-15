@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { updateDisplay } from '../actions/updateAction';
 
 class DrumPad extends Component {
   handleClick = (e) => {
     this.refs.audioElement.play();
+    this.props.updateDisplay(this.props.val);
   };
   handleKey = (e) => {
     if (String.fromCharCode(e.keyCode) === this.props.val) {
@@ -30,4 +33,14 @@ class DrumPad extends Component {
   }
 }
 
-export default DrumPad;
+const mapStateToProps = (state, ownProps) => {
+  return {};
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    updateDisplay: (msg) => {
+      dispatch(updateDisplay(msg));
+    },
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(DrumPad);

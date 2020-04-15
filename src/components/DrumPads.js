@@ -1,13 +1,13 @@
 import React from 'react';
 import DrumPad from '../components/DrumPad';
 //https://stackoverflow.com/questions/50594972/manage-multiple-audio-sources-in-react
-import audio1 from '../samples/PO-12_01_2.wav';
+import audio1 from '../samples/PO-12_11_3.wav';
 import audio2 from '../samples/PO-12_01_3.wav';
-import audio3 from '../samples/PO-12_01_4.wav';
-import audio4 from '../samples/PO-12_01_5.wav';
-import audio5 from '../samples/PO-12_01_6.wav';
-import audio6 from '../samples/PO-12_01_7.wav';
-import audio7 from '../samples/PO-12_01_8.wav';
+import audio3 from '../samples/PO-12_08_5.wav';
+import audio4 from '../samples/PO-12_10_11.wav';
+import audio5 from '../samples/PO-12_14_3.wav';
+import audio6 from '../samples/PO-12_16_6.wav';
+import audio7 from '../samples/PO-12_10_10.wav';
 import audio8 from '../samples/PO-12_01_9.wav';
 import audio9 from '../samples/PO-12_02_1.wav';
 import audio10 from '../samples/PO-12_02_2.wav';
@@ -83,26 +83,27 @@ const DrumPads = (props) => {
           <DrumPad className='drum-pad' val='Q' audio={audios.audio1} />
           <DrumPad className='drum-pad' val='W' audio={audios.audio2} />
           <DrumPad className='drum-pad' val='E' audio={audios.audio3} />
+        </div>
+        <div className='drum-pads-row middle-row'>
           <DrumPad className='drum-pad' val='A' audio={audios.audio4} />
           <DrumPad className='drum-pad' val='S' audio={audios.audio5} />
-        </div>
-        <div className='drum-pads-row'>
           <DrumPad className='drum-pad' val='D' audio={audios.audio6} />
-          <DrumPad className='drum-pad' val='Z' audio={audios.audio7} />
-          <DrumPad className='drum-pad' val='X' audio={audios.audio8} />
-          <DrumPad className='drum-pad' val='C' audio={audios.audio9} />
           {/* <DrumPad className='drum-pad' val={1} audio={audios.audio10} />
           <DrumPad className='drum-pad' val='2' audio={audios.audio11} />
           <DrumPad className='drum-pad' val='3' audio={audios.audio12} /> */}
         </div>
-        {/* <div className='drum-pads-row'>
+        <div className='drum-pads-row'>
+          <DrumPad className='drum-pad' val='Z' audio={audios.audio7} />
+          <DrumPad className='drum-pad' val='X' audio={audios.audio8} />
+          <DrumPad className='drum-pad' val='C' audio={audios.audio9} />
+        </div>
+        {/*
           <DrumPad className='drum-pad' val='4' audio={audios.audio13} />
           <DrumPad className='drum-pad' val='5' audio={audios.audio14} />
           <DrumPad className='drum-pad' val='6' audio={audios.audio15} />
           <DrumPad className='drum-pad' val='7' audio={audios.audio16} />
           <DrumPad className='drum-pad' val='8' audio={audios.audio17} />
           <DrumPad className='drum-pad' val='9' audio={audios.audio18} />
-        </div> */}
         {/* <div className='drum-pads-row'>
           <DrumPad className='drum-pad' val='P' audio={audios.audio19} />
           <DrumPad className='drum-pad' val='O' audio={audios.audio20} />

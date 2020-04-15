@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,6 +29,7 @@ code {
   min-width: 40vh;
   color: white;
   max-width: 540px;
+  border-radius: 15px;
 }
 
 .display {
@@ -39,6 +39,7 @@ code {
   background: #b7bcc0;
   width: 90%;
   min-height: 12vh;
+  border-radius: 10px;
 }
 
 .drum-pads {
@@ -47,23 +48,31 @@ code {
   width: 90%;
   min-height: 45vh;
   margin: 22px 12px;
+  border-radius: 10px;
 }
 
 .drum-pads-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 .drum-pads-row {
   display: flex;
+  justify-content: center;
   width: 100%;
 }
-
+.middle-row {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .drum-pad {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: blue;
+  background: #282c35;
+  color: #6534b3;
   margin-top: 12px;
   margin-left: 8px;
   height: 25px;
@@ -74,5 +83,5 @@ code {
 
 .drum-pad:hover {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.5;
 }
