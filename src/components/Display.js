@@ -17,7 +17,7 @@ class Display extends Component {
     }
     setTimeout(() => {
       this.props.updateDisplay('Push something');
-    }, 4000);
+    }, 10000);
   }
   render() {
     return (
