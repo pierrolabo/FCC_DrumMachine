@@ -10,14 +10,14 @@ class Display extends Component {
   componentDidUpdate() {
     if (this.props.display === 'Push something') {
       let displayText = document.querySelector('.display-text');
-      displayText.classList.toggle('text-animate');
+      displayText.classList.add('text-animate');
     } else {
       let displayText = document.querySelector('.display-text');
-      displayText.classList.toggle('text-animate');
+      displayText.classList.remove('text-animate');
     }
     setTimeout(() => {
       this.props.updateDisplay('Push something');
-    }, 1000);
+    }, 4000);
   }
   render() {
     return (
